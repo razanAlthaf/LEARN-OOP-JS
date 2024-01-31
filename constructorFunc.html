@@ -8,22 +8,18 @@
 <body>
     <script>
     // Menggunakan kaptal diawal kata
-    function Person(){
-        this.firstName = "";
-        this.LastName = "";
+    function Person(firstName, LastName){
+        this.firstName = firstName;
+        this.LastName = LastName;
         this.sayHello = function (name){
             console.log(`Hello ${name}, my name is ${this.firstName}`);
         }
     }
 
-    const razan = new Person();
-    razan.firstName = "razan";
-    razan.LastName = "althaf";
+    const razan = new Person("razan", "althaf");
     razan.sayHello("alfath");
 
-    const fajar = new Person();
-    fajar.firstName = "fajar";
-    fajar.LastName = "ramadhan";
+    const fajar = new Person("fajar", "ramadhan");
     fajar.sayHello("faisal");
 
     console.log(razan);
